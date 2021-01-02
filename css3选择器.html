@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+         <!--
+             1.基本选择器
+              id
+              类
+              标签
+              通配
+              子代 ul>li  =>仅仅是ul下面的儿子这一带的li
+              后代 ul li  =>选中的是所有后台的li 选择的范围过大
+
+             2.css3增加的几个选择器
+              :first-child  //第一个儿子
+              :last-child   //最后一个儿子
+              :nth-child    //第n个儿子
+         -->
+        <style type="text/css">
+           ul li:first-child{
+               color:red;
+           }
+           ul li:last-child{
+               color:green;
+           }
+
+           /*
+               小结： -child  只要是儿子 都可以；
+                     -type    只认相同类型的儿子
+           */
+        </style>
+         <ul>
+             <li>111</li>
+             <li>222</li>
+             <li>333</li>
+             <li>444</li>
+             <li>555</li>
+         </ul>
+    </body>
+</html>
